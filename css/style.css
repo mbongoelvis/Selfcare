@@ -1,0 +1,115 @@
+* {
+  font-family: poppins;
+}
+aside {
+  animation: image 5s ease-in-out infinite;
+  transition: 1s;
+}
+.signup-bg {
+    background: linear-gradient(
+        45deg,
+        rgba(46, 41, 41, 0.9),
+        rgba(213, 207, 207, 0.3)
+      ),
+      url(/images/doctor.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.hide-form{
+    display: none;
+}
+
+/* question styles */
+.doctor{
+    background: linear-gradient(
+        45deg,
+        rgba(46, 41, 41, 0.9),
+        rgba(213, 207, 207, 0.3)
+      ),
+      url(/images/doctor.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.patient{
+    background: linear-gradient(
+        45deg,
+        rgba(46, 41, 41, 0.9),
+        rgba(213, 207, 207, 0.3)
+      ),
+      url(/images/patient.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* animation */
+@keyframes image {
+  0% {
+    background: linear-gradient(
+        45deg,
+        rgba(46, 41, 41, 0.9),
+        rgba(213, 207, 207, 0.3)
+      ),
+      url(/images/doctor1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  50% {
+    bbackground: linear-gradient(
+        45deg,
+        rgba(46, 41, 41, 0.9),
+        rgba(213, 207, 207, 0.3)
+      ),
+      url(/images/doctor2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  75% {
+    background: linear-gradient(
+        45deg,
+        rgba(46, 41, 41, 0.9),
+        rgba(213, 207, 207, 0.3)
+      ),
+      url(/images/doctor3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  80%{
+    background: linear-gradient(
+        45deg,
+        rgba(46, 41, 41, 0.9),
+        rgba(213, 207, 207, 0.3)
+      ),
+      url(/images/doctor1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  90%{
+    background: linear-gradient(
+        45deg,
+        rgba(46, 41, 41, 0.9),
+        rgba(213, 207, 207, 0.3)
+      ),
+      url(/images/doctor2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  100%{
+    background: linear-gradient(
+        45deg,
+        rgba(46, 41, 41, 0.9),
+        rgba(213, 207, 207, 0.3)
+      ),
+      url(/images/doctor1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+}

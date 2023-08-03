@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- custom css -->
+    <link rel="stylesheet" href="/css/style.css" />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- tailwind link-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper w-full min-h-screen flex items-center justify-center">
+      <!-- login / sign up page -->
+      <div
+        class="w-[65rem] h-[40rem] rounded shadow-sm shadow-gray-300 grid grid-cols-2 border"
+      >
+        <aside class="h-full px-3 py-[10rem] text-white">
+          <h1 class="text-[36px] font-bold">Connect with us for free</h1>
+          <h2 class="font-semibold mb-10 mt-7 text-[17px] leading-loose">Let's know what challenges you are going through, are you sick and you Don't know what is wrong with you?<br>
+          Then you are in the right place</h2>
+          <a href="#" class=" px-10 bg-white text-black py-4 font-semibold flex items-center gap-4 w-[14rem] text-center">Learn more<span class="material-symbols-outlined">
+arrow_downward
+</span></i></a>
+        </aside>
+        <!-- form section -->
+        <form action="#" class="px-10 py-12 flex flex-col items-center">
+          <h1 class="font-bold text-blue-600 text-3xl underline">Login</h1>
+          <div>
+            <a
+              href="#"
+              class="flex gap-4 items-center mt-10 px-[7rem] py-3 border rounded-3xl cursor-pointer hover:bg-black hover:border-none hover:text-white transition font-bold"
+              >log in with google <i class="fa-brands fa-google"></i
+            ></a>
+            <!-- email and password section -->
+            <div class="mt-10">
+              <div class="flex flex-col gap-3">
+                <label for="Email" class="font-semibold">Enter Email</label>
+                <div class="border flex items-center pl-2 rounded-lg">
+                  <i class="fa-solid fa-envelope"></i>
+                  <input
+                    type="text"
+                    placeholder="Enter your email here"
+                    class="h-[3rem] w-full outline-none rounded-lg pl-2"
+                  />
+                </div>
+              </div>
+              <div class="flex flex-col gap-3 mt-6">
+                <label for="Password" class="font-semibold">Enter Password</label>
+                <div
+                  class="w-full flex border pr-1 gap-2 items-center pl-1 rounded-lg"
+                >
+                  <i class="fa-solid fa-key tet-gray-300"></i>
+                  <input
+                    type="password"
+                    placeholder="Enter your password here"
+                    class="h-[3rem] outline-none pl-2 w-full"
+                  />
+                  <input type="checkbox" class="w-[1.2rem] rounded" />
+                </div>
+              </div>
+              <button type="submit" class="mt-[2.8rem] bg-blue-600 px-[5rem] py-2 rounded-3xl text-white font-semibold text-lg hover:opacity-[.9] active:scale-4">Log in</button>
+            </div>
+            <p class="mt-10">Dont have an account? <a href="sign-up.html" class="underline text-red-500 font-semibold">Sign up</a></p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
