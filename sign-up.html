@@ -22,6 +22,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <script src="/js/script.js"></script>
     <title>Document</title>
   </head>
   <body>
@@ -49,9 +50,9 @@
             <div class="mt-10">
               <div class="flex flex-col gap-3">
                 <label for="Email" class="font-semibold">Enter Email</label>
-                <div class="border flex items-center pl-2 rounded-lg">
+                <div class="border flex items-center pl-2 rounded-lg" id="emailfield">
                   <i class="fa-solid fa-envelope"></i>
-                  <input
+                  <input id="email"
                     type="text" id="name"
                     placeholder="Enter your email here"
                     class="h-[3rem] w-full outline-none rounded-lg pl-2"
@@ -60,7 +61,7 @@
               </div>
               <div class="flex flex-col gap-3 mt-6">
                 <label for="Password" class="font-semibold">Enter Password</label>
-                <div
+                <div id="passwordfield" 
                   class="w-full flex border pr-1 gap-2 items-center pl-1 rounded-lg"
                 >
                   <i class="fa-solid fa-key tet-gray-300"></i>
@@ -68,26 +69,25 @@
                     type="password"
                     placeholder="Enter your password here"
                     class="h-[3rem] outline-none pl-2 w-full"
-                  />
+                   id="password"/>
                   <input type="checkbox" class="w-[1.2rem] rounded" />
                 </div>
               </div>
 
                <div class="flex flex-col gap-3 mt-6">
                 <label for="Password" class="font-semibold">Enter Password Again</label>
-                <div
-                  class="w-full flex border pr-1 gap-2 items-center pl-1 rounded-lg"
+                <div  id="passwordfield2" class="w-full flex border pr-1 gap-2 items-center pl-1 rounded-lg"
                 >
                   <i class="fa-solid fa-key tet-gray-300"></i>
-                  <input
+                  <input id="password2"
                     type="password"
                     placeholder="Enter your password here"
-                    class="h-[3rem] outline-none pl-2 w-full"
-                  />
+                    class="h-[3rem] outline-none pl-2 w-full" 
+                   />
                   <input type="checkbox" class="w-[1.2rem] rounded" />
                 </div>
               </div>
-              <button id="next" class="mt-[2.8rem] bg-blue-600 px-[2.5rem] py-2 rounded-3xl text-white font-semibold text-lg hover:opacity-[.9] active:scale-4">Next</button>
+              <button id="next" class="mt-[2.8rem] bg-blue-600 px-[2.5rem] py-2 rounded-3xl text-white font-semibold text-lg hover:opacity-[.9] active:scale-4" onclick="signup()">Next</button>
             </div>
             <p class="mt-10 text-sm mt-[6rem]">Already have an account?<a href="login.html" class="text-red-500 ml-1 underline font-semibold">Log in</a></p>
           </div>
@@ -109,6 +109,6 @@
         </form>
       </div>
     </div>
-
+    <script src="/js/firebaseauth.js" type="module"></script>
   </body>
 </html>
