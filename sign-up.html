@@ -3,6 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- fire base auth -->
+    <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-app.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyC7qE_jR80mVW-k1pIYozpXOrubP3tORbE",
+    authDomain: "selfcare-d453a.firebaseapp.com",
+    projectId: "selfcare-d453a",
+    storageBucket: "selfcare-d453a.appspot.com",
+    messagingSenderId: "1011810375309",
+    appId: "1:1011810375309:web:ba5e04986e72238faab4c4"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+</script>
     <!-- custom css -->
     <link rel="stylesheet" href="/css/style.css" />
     <!-- google font -->
@@ -29,7 +49,7 @@
     <div class="wrapper w-full min-h-screen flex items-center justify-center">
       <!-- login / sign up page -->
       <div
-        class="w-[65rem] min-h-[45rem] rounded shadow-sm shadow-gray-300 grid grid-cols-2 border"
+        class="w-[65rem] min-h-[45rem] rounded shadow-sm shadow-gray-300 grid grid-cols-1 md:grid-cols-2 border"
       >
       <!-- aside section -->
         <div class="h-full bg-red-500 signup-bg"></div>
@@ -42,8 +62,8 @@
           <div class="hide">
             <a
               href="#"
-              class="flex gap-4 items-center mt-6 px-[7rem] py-3 border rounded-3xl cursor-pointer hover:bg-black hover:border-none hover:text-white transition font-bold"
-              >Sign up with google <i class="fa-brands fa-google"></i
+              class="flex gap-4 items-center mt-6 md:px-[7rem] py-3 border rounded-3xl cursor-pointer hover:bg-black hover:border-none hover:text-white transition font-bold text-[14px] pl-10"
+              >Sign up with google <i class="fa-brands fa-google "></i
             ></a>
 
             <!-- email and password section -->

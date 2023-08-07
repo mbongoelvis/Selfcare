@@ -55,7 +55,7 @@ const showpassword = () => {
 
 
 const Name = document.querySelector(".name")
-const signup = (e) => {
+const validate = (e) => {
     if (password.value != password2.value || password.value.length == " " || password2.value.length == " ") {
         alert("password do not match")
         e.preventDefault()
@@ -71,6 +71,8 @@ const signup = (e) => {
     }
 }
 
+
+
 // next page script
 
 const finish = () => {
@@ -84,3 +86,10 @@ const back = () => {
   }
   formhide.style.display = "block";
 };
+
+
+const signup = () => {
+  if (validate() == false) {
+    return false
+  } 
+}
