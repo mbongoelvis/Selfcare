@@ -59,6 +59,7 @@
                   />
                 </div>
               </div>
+              <!-- password -->
               <div class="flex flex-col gap-3 mt-6">
                 <label for="Password" class="font-semibold">Enter Password</label>
                 <div id="passwordfield" 
@@ -70,7 +71,7 @@
                     placeholder="Enter your password here"
                     class="h-[3rem] outline-none pl-2 w-full"
                    id="password"/>
-                  <input type="checkbox" class="w-[1.2rem] rounded" />
+                  <input type="checkbox" class="w-[1.2rem] rounded" onclick="showpassword()" id="checkbox"/>
                 </div>
               </div>
 
@@ -84,31 +85,36 @@
                     placeholder="Enter your password here"
                     class="h-[3rem] outline-none pl-2 w-full" 
                    />
-                  <input type="checkbox" class="w-[1.2rem] rounded" />
+                  <input type="checkbox" class="w-[1.2rem] rounded" onclick="showpassword2()" id="checkbox2"/>
                 </div>
               </div>
-              <button id="next" class="mt-[2.8rem] bg-blue-600 px-[2.5rem] py-2 rounded-3xl text-white font-semibold text-lg hover:opacity-[.9] active:scale-4" onclick="signup()">Next</button>
+              <button id="next" class="mt-[2.8rem] bg-blue-600 px-[2.5rem] py-2 rounded-3xl text-white font-semibold text-lg hover:opacity-[.9] active:scale-4" onclick="signup()" id="btnnext">Next</button>
             </div>
             <p class="mt-10 text-sm mt-[6rem]">Already have an account?<a href="login.html" class="text-red-500 ml-1 underline font-semibold">Log in</a></p>
           </div>
 
 
           <!-- name and input form -->
-          <div class="w-full name hide-form">
+          <div class="w-[90%] name hide-form name">
             <div class="name flex flex-col gap-4">
-                <input type="text" placeholder="Enter your first name" class="mt-10 border pl-1 w-full h-[2.8rem] outline-none">
-                <input type="text" placeholder="Enter your second name" class="border pl-1 w-full h-[2.8rem] outline-none">
-                <input type="text" placeholder="Enter you last name" class="border pl-1 w-full h-[2.8rem] outline-none">
-                <input type="text" placeholder="Enter your town" class="border pl-1 w-full h-[2.8rem] outline-none">
-                <input type="text" placeholder="enter your city/town" class="border pl-1 w-full h-[2.8rem] outline-none">
-                <input type="text" placeholder="enter your Number" class="border pl-1 w-full h-[2.8rem] outline-none">
-                <input type="date" class="border pl-1 w-full h-[2.5rem] outline-none">
+                <input type="text" required placeholder="Enter your first name" class="mt-10 border pl-1 w-full h-[2.8rem] outline-none requirements">
+                <input type="text" required placeholder="Enter your second name" class="border pl-1 w-full h-[2.8rem] outline-none requirements">
+                <input type="text" required placeholder="Enter you last name" class="border pl-1 w-full h-[2.8rem] outline-none requirements">
+                <input type="text" required placeholder="Enter your town" class="border pl-1 w-full h-[2.8rem] outline-none requirements">
+                <input type="text" required placeholder="enter your city/town" class="border pl-1 w-full h-[2.8rem] outline-none requirements">
+                <input type="text" required placeholder="enter your Number" class="border pl-1 w-full h-[2.8rem] outline-none requirements">
+                <input type="date" required class="border pl-1 w-full h-[2.5rem] outline-none requirements">
             </div>
-            <button class="mt-12 bg-blue-500 px-[2.6rem] py-3 text-white font-semibold rounded active:scale-[.9] transition" onclick="next()">Finish</button>
+            <div class="flex justify-between"><button class="mt-12 bg-blue-500 px-[2.6rem] py-3 text-white font-semibold rounded active:scale-[.9] transition" onclick="back()">Back</button>
+            <button class="mt-12 bg-blue-500 px-[2.6rem] py-3 text-white font-semibold rounded active:scale-[.9] transition" onclick="finish()">Finish</button>
+          </div>
           </div>
         </form>
       </div>
     </div>
+
+    
+    <script src="/js/signup.js"></script>
     <script src="/js/firebaseauth.js" type="module"></script>
   </body>
 </html>
